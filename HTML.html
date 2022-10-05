@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="./CSS.css">
+        <meta charset="UTF-8">
+        <title> Моя домашка upgrade</title>
+        <script language = JavaScript>
+
+            const AcceptName = ["МАКСИМ", "КАТЯ"]
+
+            function cheak(n) {
+                if (typeof(n) === 'string' && n.match(/^([а-яё][А-ЯЁ]+|[a-z][A-Z]+)$/i)){
+                    return true
+                }else {
+                    return false
+                }
+            }
+
+            function printname() {
+                let name = prompt ("Представься, путник на просторах интернета");
+                while (cheak(name) == false){
+                name = prompt ("Назови настоящее имя, брат!");
+                }
+                if (name.toUpperCase() == AcceptName[0]) {
+                    if (confirm ("Ты ли это сенсей?")) {
+                        return alert("О сэнсей, рады приветсвовать тебя! Позволь тебе рассказать о моей кошке по кличке Шлепа");
+                    } else {
+                        return alert("Ну что ж чужак - тезка нашего сэнсея, позволь тебе рассказать о моей кошке по кличке Шлепа");
+                    }
+                }
+                if (name.toUpperCase() == AcceptName[1]) {
+                    if (confirm ("Ты ли это создатель?")) {
+                        return alert("О создатель, рады приветсвовать тебя! Позволь тебе рассказать о моей кошке по кличке Шлепа");
+                    } else {
+                        return alert("Ну что ж чужак - тезка нашего создателя, позволь тебе рассказать о моей кошке по кличке Шлепа");
+                    }
+                } else {
+                    return alert(`Ну что ж чужак по имени ${name}, позволь тебе рассказать о моей кошке по кличке Шлепа`);
+                }
+            }
+            printname()
+        </script>
+    </head>
+
+    <body id="back">   
+        <div id="header">
+            <img id = "logo" src="./image+video/1.jpg">
+            <h1><strong> Всё о Шлепе</strong></h1>
+            <p id ="textheader">Эта страница про чудовище, появившееся у меня полтора года назад. Про ее привычки, увлечения и многое другое</p>
+            <ul>
+                <li><a href="#prof">Шлепины профессии</a></li>
+                <li><a href="#hob">Шлепины увлечения</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h2><strong> О появлении Шлепы</strong></h2>
+            <p>Кошка по имени Шлепа появилась на свет 19 марта 2021 года в городе Осиповичи Могилевской области Республики Беларусь. 
+                Уже тогда она выделялась своей мимишностью и стрелками над глазами. Именно эти стрелки и стали причиной появления этой животины у меня дома.</p>
+            <p><img src="./image+video/2.jpg">
+            <img src="./image+video/3.jpg"></p>
+            <p>Она очень быстро освоилась на новом месте и взяла все в свои лапы.</p>
+
+            <p><video width="400" height="300" controls="controls">
+                <source src="./image+video/V1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video></p>
+            <a href="#header">Вверх</a>
+            <h2 id="prof"><strong> Шлепины профессии</strong></h2>
+            <p>За 1,5 года Шлепа освоила несколько разноплановых профессий.</p>
+            <ul>
+                <li>Крутильщик барабана стиральной машины</li>
+                <li>Парикмахер</li>
+                <li>Борец с вентилятором</li>
+                <li>Сборщик слив</li>
+            </ul>
+            <p><video width="400" height="300" controls="controls">
+                <source src="./image+video/V2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <video width="400" height="300" controls="controls">
+                <source src="./image+video/V3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video></p>
+            <p><img src="./image+video/4.jpg">
+                <img src="./image+video/5.jpg"></p>
+            <a href="#header">Вверх</a>
+            <h2 id="hob"><strong> Шлепины увлечения</strong></h2>
+            <p>У Шлепы столько увлечений, что можно позавидовать.</p>
+            <ul>
+                <li>Лазанье по деревьям</li>
+                <li>Путешествия</li>
+                <li>Ведение наблюдения с холодильника</li>
+                <li>Игра в умирающего</li>
+                <li>Валяние в песке</li>
+                <li>Попытки побега</li>
+            </ul>
+            <p><img src="./image+video/6.jpg">
+                <img src="./image+video/7.jpg">
+                <img src="./image+video/8.jpg">
+                <img src="./image+video/9.jpg"></p>
+            <p><video width="400" height="300" controls="controls">
+                <source src="./image+video/V4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+            <video width="400" height="300" controls="controls">
+                <source src="./image+video/V5.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video></p>
+            <a href="#header">Вверх</a>
+        </div>
+
+        <div id="footer">
+            <table style="display: inline-block">
+                <tr><th>Контакты</th><th>для связи:</th></tr>
+                <tr><td>Телефон:</td><td>8029-888-88-88</td></tr>
+                <tr><td>Почта:</td><td>shlepa@gmail.com</td></tr>
+            </table>
+            <p> ©ShlepinCorporate</p>
+        </div>     
+    </body>
+</html>
